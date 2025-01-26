@@ -1,0 +1,558 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Foodera -  Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,300italic,700,900' rel='stylesheet' type='text/css'>
+
+	<link type="text/css" rel="stylesheet" href="styles/SyntaxHighlighter.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script language="javascript" src="script/shCore.js"></script>
+	<script language="javascript" src="script/shBrushCss.js"></script>
+	<script language="javascript" src="script/shBrushXml.js"></script>
+	<script language="javascript" src="script/shBrushJScript.js"></script>
+	<script language="javascript">
+	window.onload = function () {
+    dp.SyntaxHighlighter.ClipboardSwf = '/script/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+	}
+	</script>
+	<style type="text/css" media="screen">
+		body {font-family:Roboto;background:#fff;margin:0;padding:0}
+		.container {background:#fff;}
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		pre, code{ 
+		font-size: 14px;
+		margin:1.5em 0;
+		white-space:pre;
+		}
+
+.main-head {
+    text-transform: uppercase;
+    color: #fff !important;
+    font-size: 14px !important;
+    padding: 25px !important;
+    background: #111;
+    margin: 0;
+    border: none;
+    letter-spacing: 1px;
+}
+	</style>
+
+
+</head>
+
+
+<body>
+	<h3 class="center alt main-head"><b>Foodera</b> - Documentation</h3>
+
+	<div class="container">
+		
+		<h1 class="center">&ldquo;Foodera - Responsive Food landing page Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: Sep 01, 2019<br>
+					By:<a href="https://themeforest.net/user/thememor" target="new"> Thememor</a><br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#Tutorial">Tutorial</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a Responsive layout with four column. Based on Bootstrap Framework. All of the information within the main content area is nested within a div with an id of "container". The sidebar's (column #2) content is within a div with an id of "secondaryContent". The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<strong>For header</strong>
+<pre name="code" class="html">
+.overlay {
+	background: #151515;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+</pre>
+
+	<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using Five CSS files in this theme. The first one is the main source file for bootstrap framework</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre name="code" class="html">
+
+/*------------------------------------------------------------------
+Template Name: Foodera - Responsive Landing Page Template
+Version: 1.0
+Author: Thememor
+Author URL: https://themeforest.net/user/thememor
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+	+ GLOBAL STYLES
+	+ COMMON STYLES 
+	+ HEADER STYLES 
+	+ INTRO STYLES
+	+ ICON BOX / SERVICES STYLES 
+	+ INFO STYLES 
+	+ TESTIMONIAL STYLES 
+	+ ABOUT   
+	+ FEATURES 
+	+ PRICING TABLE  
+	+ CLIENTS 
+	+ CONTACT 
+	+ MAILCHIMP 
+	+ ELEMENTS 
+	+ FOOTER 
+	+ RESPONSIVE STYLES 
+
+-------------------------------------------------------------------*/
+</pre>
+		
+
+		<p>The fourth file contains all of the specific stylings for Slick Carousel.</p>  
+		<p>The fifth file contains all of the specific stylings for Font-Awesome Icons.</p>  
+
+		<p>Dont change anything in first(bootstrap.css) file.
+
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports Thirteen Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+		</ol>
+		  
+		<strong>Details</strong>
+		<ol>		
+			<li>jquery.js</li>
+			<li>bootstrap.min.js</li>
+			<li>vendors/slick/slick</li>
+			<li>vendors/stellar.js</li>
+			<li>vendors/isotope/isotope.pkgd.js</li>
+			<li>vendors/swipebox/js/jquery.swipebox.min.js</li>
+			<li>main.js</li>
+			<li>vendors/mc/jquery.ketchup.all.min.js</li>
+			<li>vendors/mc/main.js</li>
+		</ol>
+		<!-- JAVASCRIPT =============================-->
+
+		<hr>
+
+		<h3 id="Tutorial"><strong>D) Tutorial</strong> - <a href="#toc">top</a></h3>
+
+		<p>Follow the steps below to change the demo contents with your own contents.</p>
+
+</br>
+</br>
+
+<p><strong>1. LOGO SECTION</strong></p>
+<p>To replace the logo name, find this code</p>
+
+<pre name="code" class="html">
+	<a href="intro.html" class="navbar-brand brand"><img src="images/logo.png" alt="logo"></a>
+</pre>
+
+
+</br>
+<hr>
+
+<p><strong>2. NAVMENU</strong></p>
+
+<p>Open index.html file and find this code.</p>
+
+<pre name="code" class="html">
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right navbar-login">
+                            <li>
+                                 <a href="tel:1800789123"><span class="icon-call"></span> 1800 789 123</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#home">Home</a>
+                            </li>
+
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#about">About Us</a>
+                            </li>
+							
+							<li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#explore">Explore Foods</a>
+                            </li>
+
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#reviews">Reviews</a>
+                            </li>
+
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+             
+</pre>
+
+</br>
+<p>Replace "Phone No" with the menu name and "#" with the page link or anchor link.</br>
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>3. INTRO CONTENT</strong></p>
+
+<p><strong>Intro Content</strong></p>
+
+<p>Find this code</p>
+
+<pre name="code" class="html">
+		<!-- Home -->
+        <div class="intro intro3">
+            <div class="container">
+                <div class="row center-content">
+                    <div class="col-md-5 col-sm-6">
+                        <h3>Good food choices are good investments.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum amet leo. </p>
+                        <div class="space30"></div>
+                        <div class="dual-btn">
+                            <a href="#" class="btn btn-lg btn-primary">Order Now <span class="fa fa-shopping-basket"></span></a> &nbsp &nbsp
+                            <a href="#" class="btn btn-lg btn-default btn-border">Learn More <i class=" ilmosys-arrow-right"></i></a>
+                        </div>
+
+</pre>
+
+<p>replace the text between "&lt;h3&gt;" "&lt;/h3&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the intro title and description.</br>
+<p>replace "<strong>Order Now</strong>" and "<strong>Learn More</strong>" with the button name.</br>
+<p>replace "#" with the button links.</br>
+<p>Same for all page section</br>
+
+</br>
+
+<p><strong>4. ABOUT SECTION</strong></p>
+<p>Find this code and change image in images folder.</p>
+
+<pre name="code" class="html">
+					<!-- About Us -->
+        <div id="about" class="container">
+            <!-- About Section 1 -->
+            <div class="intro intro-about2">
+                <div class="container">
+                    <div class="row center-content">
+                        <div class="col-md-7 ">
+                            <img src="images/features/1.png" class="pull-left img-responsive" alt="" />
+                        </div>
+                        <div class="col-md-5">
+                            <h3>We even give you more solutions to grow your business.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+							<a href="#" class="btn btn-lg btn-primary">Learn More <i class="icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</pre>
+
+</br>
+<hr>
+
+<p><strong>5. Video Section</strong></p>
+<p>Open index.html file and find this code.</p>
+
+<pre name="code" class="html">
+					<div class="container video-action">
+            <div class="row text-center">
+                <h1>When a man's stomach is full it makes no <br> difference whether he is rich or poor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio <br>finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                <br><br>
+                <a href="https://www.youtube.com/watch?v=bZx8rPd-PKQ" class="swipebox-video">
+                    <div class="intro-video-pop">
+                        <i class="fa fa-play"></i> Watch Our Story
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="space80"></div>
+</pre>
+
+</br>
+<p>To change the video, replace the video link at &lt;a&gt; &lt;/a&gt; link.</p>
+<p>Replace the text between "&lt;h1&gt;" "&lt;/h1&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the service title and description.</br>
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>6. Explore Our Foods - Section</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+						<div id="explore" class="elements-content">
+            <div class="container">
+                <div class="about-inline text-center">
+                    <h3>Explore Our Foods </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/01.jpg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Rainbow Vegetable Sandwich</h4>
+                                <p class="desc"> Time: 15 - 20 Minutes | Serves: 1 </p>
+                                <div class="price-wrap h3">
+                                    <span class="price-new">$10.50</span> <del class="price-old">$11.70</del>
+                                </div>
+                            </figcaption>
+                            <div class="bottom-wrap">
+                              <a href="" class="btn btn-sm btn-primary float-right"  data-toggle="modal" data-target="#modalContactForm">Order Now</a>
+                            </div>
+                        </figure>
+                    </div>
+</pre>
+
+<p>replace the text between "&lt;p&gt;" "&lt;/p&gt;" with the time info.</br>
+<p>replace the text between "&lt;h4 class="author"&gt;" "&lt;/h4&gt;" with the quote author info.</br>
+</br>
+</br>
+<hr>
+
+<p><strong>7. Testimonials</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+					<!-- Testimonials -->
+        <div id="reviews" class="testimonials-color">
+            <div class="container">
+                <div class="about-inline text-center">
+                    <h3>Testimonials </h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="quote2">
+                            <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."</p>
+                                <span class="author">Simab Dave - Web Designer</span>
+                            </div>
+                            <div>
+                                <img src="images/testimonials/2.jpg" alt="" />
+                                <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live far from the countries Vokalia."</p>
+                                <span class="author">Johnthan Doe - UX Designer</span>
+                            </div>
+                            <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. "</p>
+                                <span class="author">Maccy Doe - Front End</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space100"></div>
+            </div>
+        </div>
+</pre>
+
+<p>replace the text between "&lt;p"&gt;" "&lt;/p&gt;".</br>
+replace the text between "&lt;span&gt;" "&lt;/span&gt;" with the author name.</br>
+<br>
+</p>
+
+Do the same for all four.
+</br>
+</br>
+<hr>
+
+<p><strong>8. Frequently Asked Questions - Section </strong></p>
+
+<p>Find this code.</p>
+
+<pre name="code" class="html">
+<!-- Faq -->
+        <div class="container" id="faq">
+            <div class="about-inline text-center">
+                <h3>Frequently Asked Questions </h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> Is Foodera Bread really baked fresh each day?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> Do you bake breads containing animal fats or products?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> Can I order your products online?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="faq">
+                        <h4> <span>~</span> When are you opening a shop near me?</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space100"></div>
+        </div>
+</pre>
+
+<p>replace the text between "&lt;p"&gt;" "&lt;/p&gt;".</br>
+replace the text between "&lt;h4&gt;" "&lt;/h4&gt;" with the author name.</p>
+</ol>
+
+<br>
+<hr>
+
+
+<p><strong>9. Subscribe Form</strong></p>
+
+<p>Open "contact.php" file from "PHP" folder and find this code.</p>
+
+<pre name="code" class="html">
+
+define( "RECIPIENT_EMAIL", "info.thememor@gmail.com" );
+					
+</pre>
+
+</br>
+<p>
+
+Replace "YOUR_EMAIL_HERE" with your email, where you want to receive the mails.</br>
+</p>
+
+
+
+<hr>
+
+<p><strong>Intro Newsletter (mailchimp)</strong></p>
+<p>Open "subscribe.php" file from "PHP" folder and find this.</p>
+
+<pre name="code" class="html">
+$apiKey = 'YOUR_API_KEY';
+</pre>
+
+<p>Replace "YOUR_API_KEY" with your mailchimp API key - <a href="http://kb.mailchimp.com/accounts/management/about-api-keys#Find-or-Generate-Your-API-Key" target="_blank">How to get API key?</a></p>
+
+<br>
+
+<pre name="code" class="html">
+$listId = 'YOUR_LIST_ID';
+</pre>
+
+<p>Replace "YOUR_LIST_ID" with your mailchimp newsletter list id - <a href="http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id" target="_blank">How to get List ID?</a></p>
+
+<br>
+
+<pre name="code" class="html">
+$submit_url = "http://us3.api.mailchimp.com/1.3/?method=listSubscribe";
+</pre>
+
+<p>Replace "us3" with your actual data center (You can find the data center on the API key)</p>
+
+<br>
+
+</br>
+</br>
+<hr>
+
+<p><strong>10. COPYRIGHT</strong></p>
+
+<pre name="code" class="html">
+
+					<p>© 2019. Foodera. All rights reserved.</p>
+					
+</pre>
+
+<p>Replace the Copyright contents with yours.</p>
+
+</br>
+</br>
+
+<hr>
+
+
+<h3>Thats it. You are done. Now your website is ready to launch.</h3>
+
+
+</br>
+<hr>
+
+		
+	
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons, plugins, fonts or other files as listed.
+		<div style="clear:both;"></div>
+		<ul>
+			<li>Fonticons by - <a href="http://fontawesome.io" target="_blank">fontawesome</a></li>
+			<li>Demo images from - <a href="http://photodune.net/" target="_blank">Photodune</a></li>
+			<li>Demo images from - <a href="http://pixabay.com/" target="_blank">Pixabay</a></li>
+		</ul>		
+		<hr>
+		<p> All images, Icons, Logos, Fonts used in this template are free for commercial use.</p>
+		
+
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Author Name</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
