@@ -167,12 +167,12 @@
                 <div class="container">
                     <div class="row center-content">
                         <div class="col-md-7 ">
-                            <img src="images/features/1.png" class="pull-left img-responsive" alt="" />
+                            <img src="images/features/art.jpg" class="pull-left img-responsive" alt="" />
                         </div>
                         <div class="col-md-5">
                             <h3>We pride ourselves on making real food from the best ingredients.</h3>
                             <p>At Batter Breeze, we bring the essence of traditional South Indian cooking to your home
-                                with our ready-to-use dosa batter. Crafted from premium ingredients and perfected with
+                                with our ready-to-use dosa/idli batter. Crafted from premium ingredients and perfected with
                                 authentic methods, our batter is your key to making light, crispy dosas and soft, fluffy
                                 idlis effortlessly.
 
@@ -213,7 +213,7 @@
                                     class="icon-arrow-right"></i></a>
                         </div>
                         <div class="col-md-7">
-                            <img src="images/features/2.png" class="pull-left img-responsive" alt="" />
+                            <img src="images/features/banne12.jpg" class="pull-left img-responsive" alt="" />
                         </div>
                     </div>
                 </div>
@@ -222,13 +222,11 @@
         <div class="space80"></div>
 
 
-        <div class="video-action">
+        <div class="video-action" style="background-image: url(images/Banner\ 2.jpg);">
             <div class="row text-center">
-                <h1>When a man's stomach is full it makes no <br> difference whether he is rich or poor.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio <br>finibus bibendum
-                    in sit amet leo. Mauris feugiat erat tellus.</p>
-                <br><br>
-                <a href="https://www.youtube.com/watch?v=bZx8rPd-PKQ" class="swipebox-video">
+               
+                
+                <a href="#" class="swipebox-video" >
                     <div class="intro-video-pop">
                         <i class="fa fa-play"></i> Watch Our Story
                     </div>
@@ -250,31 +248,31 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card card-product">
+                        <!-- <div class="card card-product">
                             <div class="img-wrap"><img src="images/foods/01.jpg" alt="img"></div>
                             <div class="info-wrap">
                                 <h4 class="title">Rainbow Vegetable Sandwich</h4>
                                 <p class="desc"> Time: 15 - 20 Minutes | Serves: 1 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-md-4">
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/foods/02.jpg" alt="img"></div>
                             <div class="info-wrap">
-                                <h4 class="title">Vegetarian Burger</h4>
-                                <p class="desc"> Time: 30 - 45 Minutes | Serves: 1 </p>
+                                <h4 class="title">Idli Dosa Batter</h4>
+                                <p class="desc"> 1 Kg </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card card-product">
+                        <!-- <div class="card card-product">
                             <div class="img-wrap"><img src="images/foods/03.jpg" alt="img"></div>
                             <div class="info-wrap">
                                 <h4 class="title">Raspberry Stuffed French Toast</h4>
                                 <p class="desc"> Time: 10 - 15 Minutes | Serves: 1 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -356,19 +354,16 @@
                     <div class="col-md-12 text-center">
                         <div class="quote2">
                             <div>
-                                <img src="images/testimonials/1.jpg" alt="" />
                                 <p>"Batter Breeze has made my mornings so much easier! Soft idlis and crispy dosas are
                                     now just a pan away, without any hassle."</p>
                                 <span class="author">Anitha Sharma</span>
                             </div>
                             <div>
-                                <img src="images/testimonials/2.jpg" alt="" />
                                 <p>"Batter Breeze brings authentic South Indian flavors, perfectly fermented for
                                     effortless, delicious, homemade me</p>
                                 <span class="author">Hasina Mohammad</span>
                             </div>
                             <div>
-                                <img src="images/testimonials/1.jpg" alt="" />
                                 <p>"Every bite from Batter Breeze batter reminds me of home. The texture and flavor are
                                     unmatched—pure perfection every time!"</p>
                                 <span class="author">Rohan Mehta</span>
@@ -502,7 +497,7 @@
             <div class="cta-wrap subscribe-elt2 ">
                 <div class="container">
                     <div class="col-md-12">
-                        <h1>Subscribe to Batter Breeze Newsletter</h1>
+                        <h1>Subscribe to Batter Breeze</h1>
                         <p>From Batter to Plate in Minutes</p>
 
                         <form class="intro-newsletter" action="#" id="invite" method="POST">
@@ -554,6 +549,25 @@
         <div class="footer-copy">
             <div class="container">
                 &copy; 2025. <a href="#">Batter Breeze. </a> All rights reserved.
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h1>Book Your Batter Breeze Delight</h1>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <label for="text">Message:</label>
+                    <textarea name="message" rows="3" placeholder="Message"></textarea>
+                    <button type="submit">Book Now</button>
+                </form>
             </div>
         </div>
 
@@ -683,6 +697,23 @@
             formStatus.innerHTML = 'Your message has been sent successfully!';
             formStatus.style.color = 'green';
             return true; // Form can be submitted
+        }
+
+        // popup form
+        window.onload = function() {
+            document.getElementById('modal').style.display = 'block';
+        };
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Close the modal if clicked outside the modal content
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('modal')) {
+                closeModal();
+            }
         }
 
     </script>
