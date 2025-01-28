@@ -226,7 +226,18 @@
             <div class="row text-center">
                
                 
-                <a href="#" class="swipebox-video" >
+                <!-- <a href="#" class="swipebox-video" >
+                    <div class="intro-video-pop">
+                        <i class="fa fa-play"></i> Watch Our Story
+                    </div>
+                </a> -->
+            </div>
+        </div>
+        
+        <div class="mobile-image" style="background-image: url(images/phone.jpg);">
+            <div class="row text-center">
+               
+ <a href="#" class="swipebox-video" >
                     <div class="intro-video-pop">
                         <i class="fa fa-play"></i> Watch Our Story
                     </div>
@@ -246,38 +257,91 @@
                         perfect texture and taste. Enjoy golden-brown, crispy dosas anytime with our preservative-free,
                         ready-to-use batter!</p>
                 </div>
+        
                 <div class="row">
+                    <!-- Ingredients Table on Left -->
                     <div class="col-md-4">
-                        <!-- <div class="card card-product">
-                            <div class="img-wrap"><img src="images/foods/01.jpg" alt="img"></div>
-                            <div class="info-wrap">
-                                <h4 class="title">Rainbow Vegetable Sandwich</h4>
-                                <p class="desc"> Time: 15 - 20 Minutes | Serves: 1 </p>
-                            </div>
-                        </div> -->
+                        <h4 class="text-center">Ingredients</h4>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Ingredient</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rice</td>
+                                    <td>70%</td>
+                                </tr>
+                                <tr>
+                                    <td>Urad Dal (Black Lentils)</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fenugreek Seeds</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>Water</td>
+                                    <td>As required</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+        
+                    <!-- Product in Center -->
                     <div class="col-md-4">
+                        <h4 class="title text-center">Idli Dosa Batter</h4> <!-- Title moved above and centered -->
                         <div class="card card-product">
-                            <div class="img-wrap"><img src="images/foods/02.jpg" alt="img"></div>
+                            <div class="img-wrap">
+                                <img src="images/foods/02.jpg" alt="Idli Dosa Batter">
+                            </div>
                             <div class="info-wrap">
-                                <h4 class="title">Idli Dosa Batter</h4>
-                                <p class="desc"> 1 Kg </p>
+                                <p class="desc">Quantity - 1 Kg</p>
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Nutritional Values Table on Right -->
                     <div class="col-md-4">
-                        <!-- <div class="card card-product">
-                            <div class="img-wrap"><img src="images/foods/03.jpg" alt="img"></div>
-                            <div class="info-wrap">
-                                <h4 class="title">Raspberry Stuffed French Toast</h4>
-                                <p class="desc"> Time: 10 - 15 Minutes | Serves: 1 </p>
-                            </div>
-                        </div> -->
+                        <h4 class="text-center">Nutritional Values (Per 100g)</h4>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Nutrient</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Energy</td>
+                                    <td>120 kcal</td>
+                                </tr>
+                                <tr>
+                                    <td>Protein</td>
+                                    <td>4g</td>
+                                </tr>
+                                <tr>
+                                    <td>Carbohydrates</td>
+                                    <td>20g</td>
+                                </tr>
+                                <tr>
+                                    <td>Fat</td>
+                                    <td>1g</td>
+                                </tr>
+                                <tr>
+                                    <td>Dietary Fiber</td>
+                                    <td>2g</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
         <div class="space100"></div>
+        
 
 
 
@@ -432,34 +496,42 @@
         </section>
 
         <!-- Contact -->
-        <div id="contact" class="contact-container">
-            <h2>Contact Us</h2>
-            <form id="contactForm" onsubmit="return validateForm()">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="mobile">Mobile Number</label>
-                    <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit</button>
-
-                <div id="formStatus" class="form-status"></div>
-            </form>
+        <div class="row content-image-section">
+            <div id="contact" class="contact-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Submit</button>
+    
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        
+            <!-- Right side image -->
+            <div class="col-md-6 image-content">
+                <img src="images/foods/02.jpg" alt="Dosa Batter" class="img-fluid">
+            </div>
         </div>
+        
 
         <!-- company details -->
         <div class="contact-details">
